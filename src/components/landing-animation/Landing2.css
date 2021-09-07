@@ -1,0 +1,232 @@
+:root{
+    --primary: rgb(218, 132, 132);
+}
+
+.landing2-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing2-loading{
+    width: 100%;
+    height: 100vh;
+    background: var(--primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.landing2-bgimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.landing2-contenedor-izq{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.5);
+}
+
+.logoysearch{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2rem;
+    color: white
+}
+
+.landing2-logo{
+    width: 80px;
+    height: 100%;
+    background:var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.landing2-tittle{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 4rem;
+    margin-top: 2rem;
+    color: white
+}
+.upper-tittle{
+    text-align: left;
+}
+.lower-tittle{
+    text-align: right;
+}
+.landing2-subtittle-wrap{
+    width: 100%;
+    margin-top: 2rem;
+    color: white;
+    position: relative
+}
+.landing2-text{
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.landing2-nav{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.landing2-navlink{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.landing2-sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.landing2-icons{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--primary);
+    font-size: 1.5rem;
+    color: white
+}
+.landing2-sidebar-text{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: white
+}
+.sidebar-word{
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    color:var(--primary);
+}
+
+.video-description{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    transform: translateX(50%);
+}
+.landing2-video{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.minivideo-img{
+    width: 100%;
+    height: 100%;
+}
+.minivideo-cover{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: var(--primary);
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.minivideo-play-btn{
+    font-size: 2rem;
+    color: white;
+}
+
+.minivideo-text{
+    width: 50%;
+    height: 100%;
+    padding: 2rem
+}
+.minivideo-text{
+    background: rgba(173, 173, 173, 0.7);
+}
+
+
+@media screen and (max-width: 1050px){
+    .video-description{
+        display: none;
+    }
+    .landing2-sidebar{
+        top: 90vh;
+        left: 0;
+        width: 100%;
+        height: 20vh;
+        flex-direction: row;
+    }
+    .landing2-icons{
+        flex-direction: row;
+        font-size: 1rem;
+    }
+    .landing2-sidebar-text{
+        flex-direction: row;
+    }
+    .sidebar-word{
+        transform: rotate(0deg)
+    }
+    .landing2-contenedor-izq{
+        width: 100%;
+    }
+    .landing2-nav{
+        flex-direction: row;
+        width: 70%;
+        margin: 2rem auto;
+        justify-content: space-around;
+    }
+    .landing2-tittle{
+        width: 50%;
+    }
+    .landing2-subtittle-wrap{
+        width: 70%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .landing2-tittle{
+        width: 70%;
+    }
+    .landing2-subtittle-wrap{
+        width: 100%;
+    }
+    .landing2-bgimg{
+        object-position: 60% 100%;
+    }
+}
